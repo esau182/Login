@@ -11,6 +11,8 @@ app.use(express.json());
 // Archivos estáticos
 app.use(express.static("public"));
 
+app.use(express.static(path.join(__dirname, "../public")));
+
 // Middleware para analizar datos codificados en el cuerpo de las solicitudes
 app.use(express.urlencoded({ extended: false }));
 
