@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('https://www.gaceta.unam.mx/wp-content/uploads/2023/08/230831-Aca9-des-f1-videojuegos.jpg') 
+              no-repeat center center fixed;
+  background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
+}
+
+.login-container {
+  background-color: white;
+  padding: 40px 60px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  width: 500px;
+}
+
+.signup-container {
+  background-color: white;
+  padding: 40px 60px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  width: 500px;
+}
+
+.home-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2018/11/steam.jpg?tf=1200x1200') 
+              no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+.home-page h1 {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1877f2; /* Facebook blue */
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #1877f2; /* Facebook blue */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background-color: #165eab;
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.link {
+  color: #1877f2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
