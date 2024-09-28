@@ -1,18 +1,18 @@
 const mongoose = require('mongoose');
-const connect = mongoose.connect("mongodb://localhost:27017/Login-tut");
 
-// Check database connected or not
-connect.then(() => {
-    console.log("Database Connected Successfully");
-})
-.catch(() => {
-    console.log("Database cannot be Connected");
-})
+const mongoURI = process.env.MONGODB_URI || "mongodb://localhost:27017/Login-tut";
 
-// Create Schema
+mongoose.connect(mongoURI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+})
+.then(() => console.log("Database Connected Successfully"))
+.catch((err) => console.error("Database cannot be Connected:", err));
+
+// Define el esquema y modelo como antes
 const Loginschema = new mongoose.Schema({
     name: {
-        type:String,
+        type: String,
         required: true
     },
     password: {
@@ -21,7 +21,6 @@ const Loginschema = new mongoose.Schema({
     }
 });
 
-// collection part
 const collection = new mongoose.model("users", Loginschema);
 
 module.exports = collection;
